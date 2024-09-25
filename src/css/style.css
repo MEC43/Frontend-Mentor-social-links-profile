@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-400 {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-600 {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.inter-700 {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
+  background-color: var(--grey-900);
+}
+
+.pofileCard {
+  max-width: 384px;
+  width: calc(100% - 3rem);
+  margin: 14rem auto;
+  background-color: var(--grey-800);
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imgCon {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.imgCon img {
+  width: 100%;
+}
+.name {
+  font-size: 1.8rem;
+}
+.info span {
+  color: var(--green);
+}
+.info p {
+  padding-block: 1.5rem;
+}
+
+.buttonCon {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.buttonCon button {
+  width: 100%;
+  padding-block: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--grey-700);
+  border: none;
+  outline: none;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buttonCon button:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
+/*  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .pofileCard {
+    padding: 1.5rem;
+  }
+}
